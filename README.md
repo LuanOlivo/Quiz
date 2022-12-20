@@ -1,6 +1,6 @@
 # Quiz
 
-Este é formulário interativo, onde o usuário muda a cor do formulário. O formulário muda pra cor Dark ao clicar no ícone da lua, e volta a cor original ao clicar no ícone do sol. Utilizei o basico de JavaScript para fazer essa animação.
+Este é questionario interativo, onde o usuário responde a uma serie de perguntas e no final tem seu conhecimento avaliado conforme a quantidade de acertos.
 
  
 

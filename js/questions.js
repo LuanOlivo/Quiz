@@ -51,7 +51,7 @@ let questions = [
             "opção tres",
             "opção quatro"
         ], 
-        answer: 5
+        answer: 2
     },
 
    

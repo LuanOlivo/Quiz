@@ -26,10 +26,10 @@ function showQuestion(){
         for(let i in q.options){
             optionsHtml +=`<div data-op="${i}" class="option"><span>${parseInt(i)+1}</span>${q.options[i]}</div>`;
         }
-        // esse comando inseri na tela
+
         document.querySelector('.options').innerHTML = optionsHtml;
 
-        document.querySelectorAll('.option .option').forEach(item =>{
+        document.querySelectorAll('.options .option').forEach(item =>{
             item.addEventListener('click', optionClickEvent);
         })
 
@@ -39,7 +39,7 @@ function showQuestion(){
 }
 
 function optionClickEvent(e){
-    let clickedOption = paserInt(e.target.getAttribute('data-op'));
+    let clickedOption = parseInt(e.target.getAttribute('data-op'));
 
     if(questions[currentQuestion].answer === clickedOption){
          correctAnswers++;
@@ -54,10 +54,10 @@ function finishQuiz(){
 
     if (points < 30){
         document.querySelector('.scoreText1').innerHTML = 'Você precisa melhorar'
-        document.querySelector('.scorepct').style.color = '#FF0000';
+        document.querySelector('.scorePct').style.color = '#FF0000';
     } else if (points >= 30 && points < 70){
         document.querySelector('.scoreText1').innerHTML = 'Estude um pouco mais'
-        document.querySelector('.scorepct').style.color = '#FFFF00';
+        document.querySelector('.scorePct').style.color = '#FFFF00';
     } else if (points >= 70){
         document.querySelector('.scoreText1').innerHTML = 'Parabéns'
         document.querySelector('.scorePct').style.color = '#0D630D';

@@ -4,18 +4,30 @@
     box-sizing: border-box;
 }
 
+#container{
+        display: flex;
+        min-height: 50vh;
+        min-width: 50%;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #FFF;
+        border-radius: 5px;
+}
+
 body {
     display: flex;
     min-height: 100vh;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: #333;
     font-family: Arial, Helvetica, sans-serif;
+    background-color: #A9A9A9;
 }
 
 h1 {
-    color: #FFF;
+    color: #000000;
     margin: 20px 0;
 }
 
@@ -27,7 +39,7 @@ h1 {
     right: 0;
 }
 .progress-bar {
-    background-color: #00FF00;
+    background-color: #0000FF;
     height: 100%;
     transition: all ease .5s;
 }
@@ -43,7 +55,7 @@ h1 {
 }
 
 .question {
-    color: #FFF;
+    color: #000000;
     font-size: 18px;
     margin: 20px 0;
 }
@@ -51,10 +63,10 @@ h1 {
     display: flex;
     align-items: center;
     height: 40px;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.2);
     border-radius: 10px;
     margin-bottom: 5px;
-    color: #AAA;
+    color: #000000;
     font-size: 16px;
     cursor: pointer;
 }
@@ -67,15 +79,15 @@ h1 {
     border-radius: 15px;
     margin-left: 5px;
     margin-right: 10px;
-    background-color: rgba(0, 0, 0, 0.8);
-    color: #555;
+    background-color:#000080;
+    color: #FFF;
 }
 .option:hover {
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: #4169E1;
 }
 
 .scoreArea {
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: #D3D3D3;
     padding: 20px;
     border-radius: 20px;
     margin: 10px;
@@ -107,18 +119,29 @@ h1 {
 .scoreArea button {
     border: 0;
     border-radius: 10px;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: #CCC;
+    background-color: #000080;
+    color: #FFF;
     padding: 10px;
     margin-top: 20px;
     cursor: pointer;
 }
 .scoreArea button:hover {
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: #000000;
+}
+
+.social{
+    margin-top: 20px;
+}
+
+.social p{
+    text-align: center;
+    margin-bottom: 5px;
+    font-size: 15px;
 }
 
 footer {
+    text-align: center;
     margin-top: 20px;
-    color: #FFF;
-    font-size: 13px;
+    color: #000000;
+    font-size: 20px;
 }

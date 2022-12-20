@@ -14,6 +14,7 @@
         font-family: Arial, Helvetica, sans-serif;
         background-color: #FFF;
         border-radius: 5px;
+        padding-bottom: 10px;
 }
 
 body {
@@ -144,4 +145,19 @@ footer {
     margin-top: 20px;
     color: #000000;
     font-size: 20px;
+}
+
+@media (max-width: 600px)
+{
+    #container{
+        width: 50%;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 1000px)
+{
+    #container{
+        padding: 10px;
+    }
 }

@@ -1,6 +1,6 @@
 let questions = [
     {
-        question: 'Pergunta 1... ?',
+        question: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ullamcorper enim quis sodales interdum. ',
         options: [
             "opção um",
             "opção dois",
